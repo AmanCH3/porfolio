@@ -1,0 +1,49 @@
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: #050a12;
+  overflow: hidden;
+}
+
+.hero-bg__layer {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none; /* Let framer-motion handle it */
+}
+
+.hero-bg__shape {
+  width: 70%;
+  height: 70%;
+  border-radius: 40% 60% 70% 30% / 50% 40% 60% 50%;
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.4), 0 0 100px rgba(0,0,0,0.5);
+  filter: drop-shadow(0 0 60px rgba(0,0,0,0.8));
+  position: relative;
+}
+
+/* Unique shapes for each paper layer */
+.hero-bg__shape--0 { border-radius: 40% 60% 70% 30% / 50% 40% 60% 50%; width: 90%; height: 90%; }
+.hero-bg__shape--1 { border-radius: 50% 50% 30% 70% / 40% 60% 50% 50%; width: 80%; height: 80%; }
+.hero-bg__shape--2 { border-radius: 30% 70% 70% 30% / 50% 30% 70% 50%; width: 70%; height: 70%; }
+.hero-bg__shape--3 { border-radius: 60% 40% 30% 70% / 50% 50% 30% 70%; width: 60%; height: 60%; }
+.hero-bg__shape--4 { border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; width: 50%; height: 50%; }
+
+.hero-bg__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent, rgba(5,10,18, 0.4));
+  pointer-events: none;
+  z-index: 10;
+}
