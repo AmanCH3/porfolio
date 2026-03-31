@@ -11,8 +11,8 @@ const Footer = () => {
         </div>
         <div className="footer__socials">
           <a href="mailto:amanxchau1@gmail.com" className="hero__social-icon" title="Email"><FaEnvelope /></a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hero__social-icon" title="LinkedIn"><FaLinkedin /></a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hero__social-icon" title="GitHub"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/aman-chaudhary-2811b5267/" target="_blank" rel="noopener noreferrer" className="hero__social-icon" title="LinkedIn"><FaLinkedin /></a>
+          <a href="https://github.com/AmanCH3" target="_blank" rel="noopener noreferrer" className="hero__social-icon" title="GitHub"><FaGithub /></a>
           <a href="https://public.tableau.com" target="_blank" rel="noopener noreferrer" className="hero__social-icon" title="Tableau"><FaChartBar /></a>
         </div>
         <div className="footer__right">

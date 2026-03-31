@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaArrowRight, FaLinkedin, FaGithub, FaChartBar, FaCheckCircle } from 'react-icons/fa';
+import { FaArrowRight, FaLinkedin, FaGithub, FaChartBar, FaCheckCircle, FaBriefcase } from 'react-icons/fa';
 import Magnetic from '../common/Magnetic';
+import profileImg from '../../assets/profile.png';
 import './Sections.css';
 
 const stats = [
@@ -49,6 +50,12 @@ const HeroSection = () => {
                 </a>
               </Magnetic>
 
+              <Magnetic strength={0.2}>
+                <a href="/aman_resume.pdf" download className="btn btn-outline hero__cta-btn">
+                  Download CV
+                </a>
+              </Magnetic>
+
               <span className="hero__available-badge">
                 <FaCheckCircle className="hero__available-icon" />
                 Available for Freelance
@@ -57,7 +64,7 @@ const HeroSection = () => {
 
             <div className="hero__socials">
               <Magnetic strength={0.4}>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hero__social-icon" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/aman-chaudhary-2811b5267/" target="_blank" rel="noopener noreferrer" className="hero__social-icon" title="LinkedIn">
                   <FaLinkedin />
                 </a>
               </Magnetic>
@@ -67,7 +74,7 @@ const HeroSection = () => {
                 </a>
               </Magnetic>
               <Magnetic strength={0.4}>
-                <a href="https://public.tableau.com" target="_blank" rel="noopener noreferrer" className="hero__social-icon" title="Tableau">
+                <a href="https://public.tableau.com/app/profile/aman.chaudhary5705/vizzes" target="_blank" rel="noopener noreferrer" className="hero__social-icon hero__social-icon--tableau" title="Tableau">
                   <FaChartBar />
                 </a>
               </Magnetic>
@@ -84,7 +91,7 @@ const HeroSection = () => {
             <div className="hero__portrait-wrapper">
               <div className="hero__portrait-ring" />
               <img
-                src="/images/hero-portrait.png"
+                src={profileImg}
                 alt="Aman Chaudhary"
                 className="hero__portrait-img"
               />

@@ -6,7 +6,7 @@ import './Navbar.css';
 const navLinks = [
   { label: 'Home', href: '#hero' },
   { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
+  { label: 'Case Studies', href: '#case-studies' },
   { label: 'Portfolio', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -43,7 +43,7 @@ const Navbar = () => {
           ))}
         </nav>
 
-        <a href="#" className="btn btn-primary navbar__cta">
+        <a href="/aman_resume.pdf" download className="btn btn-primary navbar__cta">
           Download CV
         </a>
 
@@ -72,7 +72,7 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <a href="#" className="btn btn-primary" style={{ marginTop: '0.5rem', width: '100%', justifyContent: 'center' }}>
+            <a href="/aman_resume.pdf" download className="btn btn-primary" style={{ marginTop: '0.5rem', width: '100%', justifyContent: 'center' }}>
               Download CV
             </a>
           </motion.div>
