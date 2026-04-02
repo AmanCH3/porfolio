@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowRight, FaLinkedin, FaGithub, FaChartBar, FaCheckCircle, FaBriefcase } from 'react-icons/fa';
 import Magnetic from '../common/Magnetic';
-import profileImg from '../../assets/profile.png';
+import profileImg from '../../assets/profile.jpg';
 import './Sections.css';
 
 const stats = [
